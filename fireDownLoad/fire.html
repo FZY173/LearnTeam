@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导出图片和数据到Excel</title>
+</head>
+<body>
+<a class="btn btn-success" href="#" onclick=" exportExcel(tHeader, tbody, '我爱花朵')">Excel表格下载2</a>
+</body>
+<script src="export-excel.js"></script>
+<script>
+    // tHeader和tbody的数据需要一一对应
+    let tHeader = [
+        '姓名',
+        '学号',
+        '联系方式',
+        '照片'
+    ];
+    let tbody = [
+        {
+            name: '方志远',
+            id: '20161120173',
+            tel:'18213517452',
+            pic: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2801998497,4036145562&fm=27&gp=0.jpg'
+        },
+        {
+            name: '志远',
+            id: '2016112d73',
+            tel:'18213517452',
+            pic: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1506844670,1837003941&fm=200&gp=0.jpg'
+        },
+        {
+            name: '方',
+            id: '2016s20173',
+            tel:'18213517452',
+            pic: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3056120770,1115785765&fm=27&gp=0.jpg'
+        },
+        {
+            name: '远',
+            id: '201s0173',
+            tel:'18213517452',
+            pic: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2700343322,3431874915&fm=27&gp=0.jpg'
+        },
+        {
+            name: '方远',
+            id: '20161120173',
+            tel:'18213517452',
+            pic: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=602076004,4209938077&fm=27&gp=0.jpg'
+        },
+        {
+            name: '方志',
+            id: '20161120173',
+            tel:'18213517452',
+            pic: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=602076004,4209938077&fm=27&gp=0.jpg'
+        }
+    ]
+</script>
+</html>
