@@ -1,1 +1,12 @@
-
+# Git
+添加文件：git add -A                                  
+git add .
+git commit -m '这是一个提交提示'
+git commit -am '这是把把添加和暂存同时操作'
+git reset --hard HASH
+git stash
+git log --stat
+git chechout 
+git pull
+git merge 
+git push
