@@ -3,7 +3,6 @@
 添加所有文件：git add -A      
 查看所有的操作记录 git reflog
 查看所有的commit记录 git log
-git add .
 git commit -m '这是一个提交提示'
 git commit -am '这是把把添加和暂存同时操作'
 git reset --hard HASH
@@ -13,3 +12,9 @@ git chechout
 git pull
 git merge 
 git push
+
+| 操作含义 | 操作指令 | 居中对齐 |
+| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 添加具体文件 | git add xxx  | 单元格 |
+| 添加所有文件 | git add -A git add .  | 单元格 |
