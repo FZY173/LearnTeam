@@ -1,9 +1,4 @@
 # Git    
-git commit -am '这是把把添加和暂存同时操作'
-git chechout 
-git pull
-git merge 
-git push
 
 | 操作含义 | 操作指令 |
 | :-----| :----: | 
@@ -15,3 +10,10 @@ git push
 | 查看修改的文件 | git stash  | 
 | 保存到暂存区 | git commit -m '这是一个提交提示'  | 
 | 回退到指定版本 | git reset --hard HASH  | 
+| 这是把添加和暂存同时操作 | git commit -am '这是把添加和暂存同时操作' | 
+| 拉主分支代码 | git pull  | 
+| 拉某个远程主分支代码 | git pull origin xxx  | 
+| 切换分支 | git chechout  | 
+| 合并分支 | git merge  |
+| 推代码到远程主分支 | git push  |
+| 推代码到远程某分支 | git push origin xxx |
