@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let b= document.getElementsByTagName('body')
+    for(let i=0;i<100;i++) {
+        let img = document.createElement('img')
+        img.setAttribute('src','bad')
+        img.setAttribute('data-src','https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=bb7b3470f803738dde4a0b248b20d76c/77c6a7efce1b9d16ff80d1b1fddeb48f8d54649e.jpg')
+        img.style.display='block'
+        img.style.height='100px'
+        b[0].appendChild(img)
+    }
+
+    // 图片懒加载类
+    function isVisible($node) {
+        var winH = $(window).height(),                                    //浏览器窗口高度
+            scrollTop = $(document).scrollTop(),                          //滚轮滚动高度
+            offSetTop = $node.offset().top;                               //元素距离浏览器顶部的距离
+        if (offSetTop +100 < winH + scrollTop ) {
+            let src_value = $node.attr("data-src");
+            $node.attr("src", src_value);
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function loadPartImg() {
+        $("img").each(function () {
+            if ($(this).attr("src") === "") {
+                console.log('success')
+            } else {
+                isVisible($(this));
+            }
+        });
+    }
+
+    loadPartImg();
+    $(window).on("scroll", function () {
+        loadPartImg();
+    });
+
+
+</script>
+</html>
