@@ -7,7 +7,7 @@
 | 查看所有的操作记录 | git reflog  | 
 | 查看所有的commit记录 | git log  | 
 | 查看最新的commit记录 | git log --stat | 
-| 查看修改的文件 | git stash  | 
+| 查看修改的文件 | git status| 
 | 保存到暂存区 | git commit -m '这是一个提交提示'  | 
 | 回退到指定版本 | git reset --hard HASH  | 
 | 这是把添加和暂存同时操作 | git commit -am '这是把添加和暂存同时操作' | 
