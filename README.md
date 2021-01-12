@@ -67,3 +67,7 @@ npm i
 ### 推荐
 
 - 代码 commit 之前，过一遍所有变更（推荐用 SourceTree 之类的可视化工具）。
+
+### 结束语
+
+#####  project 已迁移到gitlab，后期在gitlab上进行维护。 [learnTeam](https://gitlab.com/fang_zhiyuan/LearnTeam)
